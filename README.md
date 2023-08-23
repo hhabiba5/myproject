@@ -1,8 +1,6 @@
 #include <iostream>
-#include "ballista.cpp"
-#include "catapult.cpp"
-#include "seigeTower.cpp"
-
+#include "vehicles.h"
+#include "soldiers.h"
 using namespace std;
 
 int main()
@@ -22,21 +20,27 @@ int main()
 
                 case 1 : //the army will attack
                     int whoattack;
+                    
                     cout << "lets do it!/n";
                     cout << "which part of the army do you prefer to perform the attack?/n";
                     cout << "1.soldiers/n";
                     cout << "2.vehicles/n";
                     cout << "3.both at once!/n";
+                    
+                    
                     cin  >> whoattack;
+                    
+                    
                     switch (whoattack){
 
-                  case 1:
+                     case 1://only soldiers attack
 
 
 
 
 
-                  case 2:void ballista::attack()
+                     case 2://only vehicles attack
+                         void ballista::attack()
 
                          void catapult::attack()
 
@@ -46,7 +50,8 @@ int main()
 
 
 
-                  case 3://soldiers and vehicles attack
+                     case 3://soldiers and vehicles attack
+                         
                       void ballista::attack()
 
                       void catapult::attack()
@@ -61,8 +66,21 @@ int main()
 
 
                 case 2 : // army defend
-                    cout<<"army is defending!";
-
+                
+                    cout<<"army is defending!/n";
+                    
+                    //vehicles move
+                    
+                    void catapult::move()
+                    void ballista::move()
+                    void seigeTower::move()
+                    
+                         //soldiers defend 
+                         
+                    void archers :: defAction()
+                    void infantry:: defAction()
+                    void knights:: defAction()
+                    
 
 
 
@@ -78,4 +96,3 @@ int main()
     }
     return 0;
 }
-
